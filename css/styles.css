@@ -701,6 +701,7 @@ button {
     /*------------------------- HEADER-HERO ---------------------*/
     .hero {
         display: block;
+        padding: 1rem;
     }
 
     /*------------------------- CALCULADORA ---------------------*/
@@ -913,7 +914,6 @@ button {
 
     /*------------------------- HEADER-HERO ---------------------*/
     .hero h1 {
-        margin-top: 5rem;
         margin-bottom: 0;
         font-size: 4vw;
     }
@@ -924,7 +924,6 @@ button {
 
     .hero-text-carousel .carousel-item p {
         font-size: 1.7rem;
-        margin-bottom: 3rem;
     }
 
     /*------------------------- CALCULADORA ---------------------*/
