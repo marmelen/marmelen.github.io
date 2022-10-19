@@ -639,6 +639,8 @@ button {
 }
 
 .requirement-icon {
+    width: 3rem;
+    height: 3rem;
     margin-right: 10px;
 }
 
@@ -872,6 +874,13 @@ button {
     /*------------------------- CALCULADORA ---------------------*/
     .calculator-title {
         font-size: 2.5rem;
+    }
+
+    /*------------------------- ICONOS --------------------------*/
+    .requirement-icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 10px;
     }
 }
 
