@@ -292,6 +292,14 @@ p {
     max-height: 7rem;
 }
 
+.step-container:hover {
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
 /*------------------------- PRESTAMO ------------------------*/
 /*------------------------- REQUISITOS ----------------------*/
 .loans-requirements h2 {
