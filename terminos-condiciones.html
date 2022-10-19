@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cacdd04d0e.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Woko - Préstamos Personales</title>
+</head>
+
+<body>
+    <!-- NAV HEADER -->
+    <header id="header" class="header header-dark-bg header-fixed">
+        <!-- NAV HEADER -->
+        <header id="header" class="header header-dark-bg header-fixed">
+
+            <!-- OVERFLOW MENU -->
+            <ul class="overflow-menu" id="overflow-menu">
+                <li class="nav-link overflow-menu-link">
+                    <a href="#footer">Contacto</a>
+                </li>
+                <li class="nav-link overflow-menu-link">
+                    <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+                </li>
+            </ul>
+
+            <!--HEADER NAV LINKS-->
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">
+                    <img src="img/img-logo-woko.png" alt="Logo Woko">
+                </a>
+
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#footer">Contacto</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="https://solicitud.woko.com.mx/usuario?_ga=2.152788606.617575130.1665504410-1514642199.1665504410&_gl=1*kteo34*_ga*MTUxNDY0MjE5OS4xNjY1NTA0NDEw*_ga_L9YZYS445T*MTY2NTY4MTA0Mi43LjEuMTY2NTY4MjgzMS4wLjAuMA.."
+                            class="btn secondary-btn">ACCESO CLIENTES</a>
+                    </li>
+
+                    <li>
+                        <a href="https://solicitud.woko.com.mx/usuario/nuevo" class="btn primary-btn">APLICA YA</a>
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
+                            <a href="https://www.facebook.com/WOKOFINANCIAL">
+                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </a>
+                        </svg>
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
+                            <a href="https://www.instagram.com/woko.com.mx/">
+                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </a>
+                        </svg>
+                    </li>
+                </ul>
+
+                <button class="menu-hamburger" id="menu-hamburger-btns">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon" id="menu-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon close-icon"
+                        id="close-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+    </header>
+
+    <main class="terms-conditions">
+        <div class="terms-conditions-header">
+            <h1 class="terms-conditions-title" id="title">Términos y condiciones</h1>
+        </div>
+
+        <div class="section">
+            <p>
+                A los Usuarios se les informa de los siguientes Términos y Condiciones de Uso y Privacidad, que les son
+                aplicables por el simple uso o acceso a cualquiera de las Páginas que integran el Portal denominado Woko
+                (el «Portal»), por lo que se entiende que los acepta, y acuerda en obligarse en su cumplimiento.
+                <br><br>
+                En el caso de que no esté de acuerdo con los Términos y Condiciones de Uso y Privacidad deberá
+                abstenerse de acceder o utilizar el Portal.
+                <br><br>
+                World Community Integrated Technologies,Sociedad Anónima Promotora de Inversión se reserva el derecho de
+                modificar discrecionalmente el contenido del Portal en cualquier momento, sin necesidad de previo aviso.
+                <br><br>
+                El Usuario, entendido como aquella persona que realiza el acceso mediante equipo de cómputo y/o de
+                comunicación, conviene en no utilizar dispositivos, software, o cualquier otro medio tendiente a
+                interferir tanto en las actividades y/u operaciones del Portal o en las bases de datos y/o información
+                que se contenga en el mismo.
+            </p>
+
+            <h2>1. Uso y restricciones</h2>
+            <p>
+                El acceso o utilización del Portal expresan la adhesión plena y sin reservas del Usuario a los presentes
+                Términos y Condiciones de Uso y Privacidad. A través del Portal (http://www.woko.com.mx), el Usuario
+                (entendiéndose como cualquier persona que acece al Portal) se servirá y/o utilizará diversos servicios y
+                contenidos (en lo sucesivo, los «Servicios y Contenidos»), puestos a disposición de los Usuarios por
+                parte de World Community Integrated Technologies, Sociedad Anónima Promotora de Inversión de Capital
+                Variable y/o sus subsidiarias, controladoras, partes relacionadas y afiliadas (en lo sucesivo, Woko),
+                y/o por terceros proveedores de Servicios y Contenidos. Woko tendrá el derecho a negar, restringir o
+                condicionar al Usuario el acceso a las Páginas, total o parcialmente, a su entera discreción, así como a
+                modificar los Servicios y Contenidos de las Páginas en cualquier momento y sin necesidad de previo
+                aviso.
+                <br><br>
+                Los Usuarios aceptan y reconocen que su voluntad se encuentra regulada de conformidad con lo dispuesto
+                por en el Artículo 80 del Código de Comercio y en términos de lo dispuesto por el artículo 1803 del
+                Código Civil Federal, de aplicación supletoria en la materia mercantil. El Usuario reconoce que algunos
+                Servicios y Contenidos pueden ser utilizados solamente con posterioridad a su contratación, activación o
+                registro previo por el Usuario, según se indique en las condiciones de contratación que se establezcan
+                en la documentación respectiva. Woko no garantiza la disponibilidad y continuidad de la operación de las
+                Páginas o el Portal y de los Servicios y Contenidos, ni la utilidad del Portal o los Servicios y
+                Contenidos en relación con cualquier actividad específica, independientemente del medio de acceso que
+                utilice el Usuario incluido la telefonía móvil. Woko no será responsable por daño o pérdida alguna de
+                cualquier naturaleza que pueda ser causado debido a la falta de disponibilidad o continuidad de
+                operación de la Página y/o de los Servicios y Contenidos.
+            </p>
+
+            <h2>2. Propiedad intelectual</h2>
+            <p>
+                Los derechos de propiedad intelectual respecto de los Servicios y Contenidos y los signos distintivos y
+                dominios de las Páginas o el Portal, así como los derechos de uso y explotación de los mismos,
+                incluyendo su divulgación, publicación, reproducción, distribución y transformación, son propiedad
+                exclusiva de Woko. El Usuario no adquiere ningún derecho de propiedad intelectual por el simple uso de
+                los Servicios y Contenidos de la Página y en ningún momento dicho uso será considerado como una
+                autorización o licencia para utilizar los Servicios y Contenidos con fines distintos a los que se
+                contemplan en los presentes Términos y Condiciones de Uso y Privacidad y a los contratos respectivos.
+            </p>
+
+            <h2>3. Propiedad intelectual de terceros</h2>
+            <p>
+                El Usuario acuerda que las disposiciones que se establecen en el inciso 2 anterior respecto de la
+                titularidad de los derechos de Woko también son aplicables a los derechos de terceros respecto de los
+                Servicios y Contenidos de las Páginas, dominios o información presentada o vinculada al Portal.
+            </p>
+
+            <h2>4. Usos permitidos</h2>
+            <p>
+                El aprovechamiento de los Servicios y Contenidos del Portal es exclusiva responsabilidad del Usuario,
+                quien en todo caso deberá servirse de ellos acorde a las funcionalidades permitidas en la propia Página
+                y a los usos autorizados en los presentes Términos y Condiciones de Uso y Privacidad, por lo que el
+                Usuario se obliga a utilizarlos de modo tal que no atenten contra las normas de uso y convivencia en
+                Internet, las leyes de los Estados Unidos Mexicanos y la legislación vigente en el país en que el
+                Usuario se encuentre al usarlos, las buenas costumbres, la dignidad de la persona y los derechos de
+                terceros. El Portal es para el uso individual del Usuario por lo que no podrá comercializar de manera
+                alguna los Servicios y Contenidos.
+            </p>
+
+            <h2>5. Restricciones</h2>
+            <p>
+                El Usuario no tiene el derecho de colocar híper ligas de y al Portal, ni el derecho de colocar o
+                utilizar los Servicios y Contenidos de la Página en sitios o páginas propias o de terceros sin
+                autorización previa y por escrito de Woko. Asimismo, el Usuario no tendrá el derecho de limitar o
+                impedir a cualquier otro Usuario el uso del Portal.
+            </p>
+
+            <h2>6. Calidad de los servicios y contenidos</h2>
+            <p>
+                Ni Woko, ni sus proveedores o socios comerciales serán responsables de cualquier daño o perjuicio que
+                sufra el Usuario a consecuencia de inexactitudes, consultas realizadas, asesorías, errores tipográficos
+                y cambios o mejoras que se realicen periódicamente a los Servicios y Contenidos. Las recomendaciones y
+                consejos obtenidos a través del Portal son de naturaleza general, por lo que no deben tomarse en cuenta
+                en la adopción de decisiones personales ni profesionales. Para ello se debe consultar a un profesional
+                apropiado que pueda asesorar al Usuario de acuerdo con sus necesidades específicas.
+                <br><br>
+                El Usuario acepta y reconoce que Woko no ha realizado ninguna solicitud, ofrecimiento o promoción para
+                la captación de dinero, bienes o servicios, según dicho concepto está previsto Ley de Instituciones de
+                Crédito, mediante el Portal o cualquier otro medio.
+            </p>
+
+            <h2>7. Bienes y servicios de terceros enlazados</h2>
+            <p>
+                El hecho de que se ofrezca información en el Portal o en otros ligados o vinculados, no implica la
+                recomendación, garantía, patrocinio o aprobación por parte de WOKO respecto dicha información, bienes
+                y/o servicios. La disponibilidad de bienes y/o servicios ofertados por terceros o por sitios ligados o
+                vinculados, no es responsabilidad de WOKO. En vista de lo anterior, WOKO no será responsable ante
+                cualquier autoridad de cualquier naturaleza, por cualquier asunto relacionado con la venta, consumo,
+                distribución, entrega, disponibilidad o prestación con respecto de cualquiera de los bienes y/o
+                servicios ofertados por terceros o por sitios ligados o vinculados a través del Portal.
+                <br><br>
+                Respecto de los Servicios y Contenidos que prestan terceros dentro o mediante enlaces a la Página (tales
+                como ligas, banners y botones), WOKO se limita exclusivamente, para conveniencia del Usuario, a: (i)
+                informar al Usuario sobre los mismos, y (ii) a proporcionar un medio para poner en contacto al Usuario
+                con proveedores o vendedores. Los productos y/o servicios que se comercializan dentro del Portal y/o en
+                los sitios de terceros enlazados son suministrados por comerciantes independientes a WOKO. No existe
+                ningún tipo de relación laboral, asociación o sociedad, entre WOKO y dichos terceros. Toda asesoría,
+                consejo, declaración, información y contenido de las páginas de terceros enlazadas o dentro de la Página
+                representan las opiniones y juicios de dicho tercero, consecuentemente, WOKO no será responsable de
+                ningún daño o perjuicio que sufra el Usuario a consecuencia de los mismos.
+            </p>
+
+            <h2>8. Confidencialidad</h2>
+            <p>
+                WOKO se obliga a mantener confidencial la información que reciba del Usuario que tenga dicho carácter
+                conforme a las disposiciones legales aplicables, en los Estados Unidos Mexicanos. WOKO no asume ninguna
+                obligación de mantener confidencial cualquier otra información que el Usuario le proporcione, ya sea al
+                inscribirse al Portal o en cualquier otro momento posterior, incluyendo aquella información que el
+                Usuario proporcione a través de boletines, pizarras o plática en línea (chats); así como, la información
+                que obtenga WOKO a través de las Cookies que se describen en inciso 10.
+            </p>
+
+            <h2>9. Uso de la información no confidencial o individual</h2>
+            <p>
+                Mediante el uso del Portal, el Usuario autoriza a WOKO a utilizar, publicar, reproducir, divulgar,
+                comunicar públicamente y transmitir la información no confidencial o no individual, en términos de lo
+                establecido en el artículo 109 de la Ley Federal de los Derechos de Autor y de la fracción I, del
+                artículo 76 bis de la Ley Federal de Protección al Consumidor.
+            </p>
+
+            <h2>10. Cookies</h2>
+            <p>
+                El Usuario que tenga acceso a la Página, conviene en recibir archivos que les transmitan los servidores
+                WOKO. «Cookie» significa un archivo de datos que se almacena en el disco duro de la computadora del
+                Usuario cuando éste tiene acceso a la Página. Dichos archivos pueden contener información tal como la
+                identificación proporcionada por el Usuario o información para rastrear las páginas que el Usuario ha
+                visitado. Una Cookie no puede leer los datos o información del disco duro del Usuario ni leer las
+                Cookies creadas por otros sitios o páginas.
+            </p>
+
+            <h2>11. Aviso de privacidad de datos personales</h2>
+            <p>
+                Toda la información que WOKO recabe del Usuario es tratada con absoluta confidencialidad conforme las
+                disposiciones legales aplicables.
+            </p>
+
+            <h2>12. Claves de acceso</h2>
+            <p>
+                En todo momento, el Usuario es el responsable único y final de mantener en secreto su claves de acceso
+                con la cual tenga acceso a ciertos Servicios y Contenidos del Portal; así como a las páginas de
+                terceros, liberando de cualquier responsabilidad por este concepto a WOKO.
+            </p>
+
+            <h2>13. Modificaciones</h2>
+            <p>
+                WOKO tendrá el derecho de modificar en cualquier momento los Términos y Condiciones de Uso y Privacidad.
+                En consecuencia, el Usuario debe leer atentamente los Términos y Condiciones de Uso y Privacidad cada
+                vez que pretenda utilizar el Portal. Ciertos Servicios y Contenidos ofrecidos a los Usuarios en y/o a
+                través de la Página están sujetos a condiciones particulares propias que sustituyen, completan y/o
+                modifican los Términos y Condiciones de Uso y Privacidad (en lo sucesivo, las «Condiciones
+                Particulares»). Consiguientemente, el Usuario también debe leer atentamente las correspondientes
+                Condiciones Particulares antes de acceder a cualquiera de los Servicios y Contenidos.
+                <br><br>
+                De conformidad con la legislación aplicable ciertos servicios requerirán de la instalación de
+                herramientas de protección para la información que se solicite, por lo que servicio será negado en caso
+                de no ser aceptada la instalación requerida.
+            </p>
+
+            <h2>14. Leyes aplicables y jurisdicción</h2>
+            <p>
+                Para la interpretación, cumplimiento y ejecución de los presentes Términos y Condiciones de Uso y
+                Privacidad, el Usuario está de acuerdo en que serán aplicables las leyes Federales de los Estados Unidos
+                Mexicanos y competentes los tribunales de la Ciudad de Monterrey, Nuevo León, renunciando expresamente a
+                cualquier otro fuero o jurisdicción que pudiera corresponderles en razón de sus domicilios presentes o
+                futuros o por cualquier otra causa
+            </p>
+
+            <h2>15. Solicitud de conformidad con el contrato</h2>
+            <p>
+                SOLICITUD DE CONFORMIDAD DEL CONTRATO: El cliente manifiesta bajo protesta de decir verdad que los
+                recursos con los que pagaré el crédito, costo, gasto, comisión o cualquier accesorio del mismo son y
+                serán siempre propios y de procedencia licita. Asimismo, reconoce expresamente que no actúa en nombre o
+                representación de un tercero, el cliente se obliga a notificar por escrito de tal situación y el nombre
+                del tercero de que se trate. Asimismo, el cliente manifiesta que al aceptar el presente documento acepta
+                que la información indicada en ésta solicitud es verdadera y acepto los términos del clausulado que se
+                ha puesto a su disposición. Acepto e instruyo el aprovisionamiento de fondos el día hábil inmediato
+                anterior a cada Fecha Límite de Pago para que sean aplicados al pago del crédito. De conformidad con la
+                Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su reglamento, y
+                enterado del Aviso de Privacidad que <b>World Community Integrated Technologies Sociedad Anónima
+                    Promotora de Inversión de Capital Variable</b> puso a mi disposición, autorizo el tratamiento de mis
+                datos personales proporcionados. Asimismo estoy enterado que este Aviso de Privacidad en todo momento lo
+                puedo consultar en www.woko.com.mx
+            </p>
+
+            <h2>16. Autorización de consulto monitoreo de información crediticia</h2>
+            <p>
+                “Por medio de la presente autorizo a World Community Integrated Technologies SAPI de CV para que
+                directamente o por conducto de cualquier sociedad de Información Crediticia solicite, obtenga o
+                verifique en el presente o en el futuro y cuantas veces considere necesario y oportuno, toda la
+                información crediticia del suscrito. Hago constar que conozco la naturaleza y alcance de la información
+                que se solicitará, del uso que se hará de tal información y del hecho que se podrán hacer consultas
+                periódicas de mi historial crediticio conforme a lo establecido en el artículo 28 de la Ley para Regular
+                las Sociedades de Información Crediticia a que se deben sujetarse las mencionadas Sociedades de
+                información Crediticia. La presente autorización tendrá carácter de irrevocable y se encontrará vigente
+                por tres años o por más tiempo mientras exista una relación jurídica entre ambos o existan obligaciones
+                pendientes a mi cargo derivado de dicha operación. Autorizo a <b>World Community Integrated Technologies
+                    Sociedad Anónima Promotora de Inversión de Capital Variable</b> , a compartir documentación e
+                información financiera comercial, operativa, de historial o información crediticia y de cualquier otra
+                naturaleza que le sea proporcionada por mi o por terceros con mi autorización a cualquiera de las
+                entidades financieras del <b>Grupo Woko Financial</b>, subsidiarias a nivel nacional e internacional
+                siempre y cuando se trate de subsidiarias del <b>Grupo Woko</b>.
+            </p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <section class="footer-sections-container">
+
+            <div class="footer-section footer-contact-links">
+                <a href="index.html" class="header-link">
+                    <img src="img/img-logo-woko.png" alt="Logo Woko">
+                </a>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icon ">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M0 32L144 0l80 144-83.8 67c36.1 68.4 92.3 124.6 160.8 160.8L368 288l144 80L480 512H448C200.6 512 0 311.4 0 64L0 32z" />
+                        </svg>
+                        87 1231 5968 Ext. 101
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                        81 1747 5568
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
+                        </svg>
+                        <a href="mailto: contacto@woko.com.mx">contacto@woko.com.mx</a>
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <a href="https://goo.gl/maps/PVcFusunSGEAF69o6" target="_blank">
+                            Av Lázaro Cárdenas 506, Antigua Hacienda San Agustín,64752 Monterrey, N.L.</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-others-links">
+                <h3>Avisos</h3>
+                <ul>
+                    <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+                    <li>
+                        <a href="terminos-condiciones.html">Términos y condiciones</a>
+                    </li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-sections-links">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="index.html#header">Solicita tu préstamo</a></li>
+                    <li><a href="index.html#steps">Pasos</a></li>
+                    <li><a href="index.html#community">Testimonios </a></li>
+                    <li><a href="index.html#requirements">Requisitos </a></li>
+                    <li><a href="index.html#about-us">¿Quiénes Somos?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-media-links">
+                <h3>Redes</h3>
+                <ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
+                        <a href="https://www.facebook.com/WOKOFINANCIAL">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </a>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
+                        <a href="https://www.instagram.com/woko.com.mx/">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </a>
+                    </svg>
+                </ul>
+
+                <a href="https://www.burodecredito.com.mx/">
+                    <img src="img/img-buro-credito.png" alt="Logo Buró de Crédito" height="100" />
+                </a>
+
+
+            </div>
+        </section>
+
+        <p class="footer-copyright">WOKO© Copyright 2022. Powered by WOKO Financial</p>
+    </footer>
+
+    <script src="script/menu.js" />
+    </script>
+</body>
+
+</html>

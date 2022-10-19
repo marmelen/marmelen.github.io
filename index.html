@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cacdd04d0e.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Woko - Préstamos Personales</title>
+</head>
+
+<body>
+    <!-- NAV HEADER -->
+    <header class="header" id="header">
+
+        <!-- OVERFLOW MENU -->
+        <ul class="overflow-menu" id="overflow-menu">
+            <li class="nav-link overflow-menu-link">
+                <a href="#footer">Contacto</a>
+            </li>
+            <li class="nav-link overflow-menu-link">
+                <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+            </li>
+        </ul>
+
+        <!-- BACKGROUND CAROUSEL-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide banner-carousel" data-ride="carousel"
+            data-interval="4000">
+            <div class="carousel-inner banner-carousel-container">
+                <div class="carousel-item active banner-1"></div>
+                <div class="carousel-item banner-2"></div>
+            </div>
+        </div>
+
+        <!--HEADER NAV LINKS-->
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav-link">
+                <img src="img/img-logo-woko.png" alt="Logo Woko" loading="lazy">
+            </a>
+
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="#footer">Contacto</a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+                </li>
+
+                <li>
+                    <a href="https://solicitud.woko.com.mx/usuario?_ga=2.152788606.617575130.1665504410-1514642199.1665504410&_gl=1*kteo34*_ga*MTUxNDY0MjE5OS4xNjY1NTA0NDEw*_ga_L9YZYS445T*MTY2NTY4MTA0Mi43LjEuMTY2NTY4MjgzMS4wLjAuMA.."
+                        class="btn secondary-btn">ACCESO CLIENTES</a>
+                </li>
+
+                <li>
+                    <a href="https://solicitud.woko.com.mx/usuario/nuevo" class="btn primary-btn">APLICA YA</a>
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
+                        <a href="https://www.facebook.com/WOKOFINANCIAL">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </a>
+                    </svg>
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
+                        <a href="https://www.instagram.com/woko.com.mx/">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </a>
+                    </svg>
+                </li>
+            </ul>
+
+            <button class="menu-hamburger" id="menu-hamburger-btns">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon" id="menu-icon">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon close-icon"
+                    id="close-icon">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- HERO HEADER -->
+        <section class="hero" id="hero">
+            <h1>
+                PRÉSTAMO PERSONAL <br />
+                <span class="aqua-color">HASTA $50,000</span>
+            </h1>
+
+
+            <!--HERO SUBTITLE CAROUSEL-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner hero-text-carousel">
+                    <div class="carousel-item active">
+                        <p>Solicita hasta 3 meses de tu sueldo </p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Tasa de interés fija </p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Hasta 36 meses de plazo</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Sin penalización por prepago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- CALCULATOR -->
+        <article class="section calculator">
+            <div class="calculator-section forms">
+                <h2 class="calculator-title" id="title">Cotiza tu préstamo aquí</h2>
+
+                <div class="calculator-inputs">
+                    <div class="calculator-field">
+                        <label>¿Cuánto Necesitas?: </label>
+                        <p class="input purple-color" id="amount-input">$10,000</p>
+                        <div class="slider">
+                            <input type="range" min="10000" max="50000" value="10000" step="1000" class="slider"
+                                id="amount-range">
+                        </div>
+                    </div>
+
+                    <div class="calculator-field">
+                        <label>Plazo de crédito:</label>
+                        <p class="input purple-color"><span id="time-input">12</span> quincenas</p>
+                        <div class="slider">
+                            <input type="range" min="12" max="72" value="6" step="12" class="slider" id="time-range">
+                        </div>
+                    </div>
+
+                    <div class="calculator-field">
+                        <label>Tipo de préstamo:</label>
+                        <select class="input input-selector">
+                            <option value="" disabled selected>¿Para qué es el dinero?</option>
+                            <option value="value1">Consolidar deudas</option>
+                            <option value="value2">Para mejorar mi casa</option>
+                            <option value="value3">Emergencias médicas</option>
+                            <option value="value4">Financiar mi negocio</option>
+                            <option value="value5">No enlistado aquí</option>
+                            <option value="value6">Consolidar deudas</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="calculator-section calculator-result">
+                <p class="calculator-pay purple-color" id="calculator-output">$949.67</p>
+                <p>Pago quincenal estimado</p>
+                <a href="https://solicitud.woko.com.mx/usuario/nuevo" class="btn ternary-btn">APLICA YA</a>
+            </div>
+        </article>
+
+        <!-- STEPS -->
+        <article class="section steps" id="steps">
+            <h2>
+                Tu préstamo Woko de hasta <span class="purple-color">$50,000 MXN</span>. En 4 pasos. <br />
+                Autorización en menos de <span class="purple-color">24 horas</span>
+            </h2>
+
+            <section class="steps-container transition">
+                <div class="step-container">
+                    <img src="https://woko.com.mx/wp-content/uploads/2021/07/Group-176-1.svg" alt="Step 1 Image"
+                        class="step-container-img" loading="lazy"/>
+                    <h3>Calcula tus pagos</h3>
+                    <p>Revisa como quedarían tus pagos quincenales.</p>
+                </div>
+
+                <div class="step-container">
+                    <img src="https://woko.com.mx/wp-content/uploads/2021/07/Group-177-1.svg" alt="Step 2 Image"
+                        class="step-container-img" loading="lazy"/>
+                    <h3>Cuéntanos de ti</h3>
+                    <p>Completa el formulario con los datos requeridos y envíalo.</p>
+                </div>
+
+                <div class="step-container">
+                    <img src="https://woko.com.mx/wp-content/uploads/2021/07/Group-178-1.svg" alt="Step 3 Image"
+                        class="step-container-img" loading="lazy"/>
+                    <h3>Análisis de solicitud</h3>
+                    <p>
+                        Espera a que analicemos tu solicitud para darte una respuesta.
+                    </p>
+                </div>
+
+                <div class="step-container">
+                    <img src="https://woko.com.mx/wp-content/uploads/2021/07/Group-179-1.svg" alt="Step 4 Image"
+                        class="step-container-img" loading="lazy"/>
+                    <h3>Recibe tu préstamo</h3>
+                    <p>
+                        Si tu préstamo fue autorizado estarás recibiendo los fondos en la
+                        cuenta bancaria que proporcionaste.
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- LOAN WOKO -->
+    <article class="section loans-requirements" id="loans-requirements">
+        <section class="loans transition" id="loans">
+            <h2>Préstamo <span class="purple-color">Woko</span></h2>
+
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="checkmark-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M211.8 339.8C200.9 350.7 183.1 350.7 172.2 339.8L108.2 275.8C97.27 264.9 97.27 247.1 108.2 236.2C119.1 225.3 136.9 225.3 147.8 236.2L192 280.4L300.2 172.2C311.1 161.3 328.9 161.3 339.8 172.2C350.7 183.1 350.7 200.9 339.8 211.8L211.8 339.8zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                    </svg>
+                    Montos que si te sacan de un apuro.HASTA $ 50,000 MXN
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="checkmark-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M211.8 339.8C200.9 350.7 183.1 350.7 172.2 339.8L108.2 275.8C97.27 264.9 97.27 247.1 108.2 236.2C119.1 225.3 136.9 225.3 147.8 236.2L192 280.4L300.2 172.2C311.1 161.3 328.9 161.3 339.8 172.2C350.7 183.1 350.7 200.9 339.8 211.8L211.8 339.8zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                    </svg>
+                    Plazos que te permiten respirar. HASTA 36 MESES.
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="checkmark-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M211.8 339.8C200.9 350.7 183.1 350.7 172.2 339.8L108.2 275.8C97.27 264.9 97.27 247.1 108.2 236.2C119.1 225.3 136.9 225.3 147.8 236.2L192 280.4L300.2 172.2C311.1 161.3 328.9 161.3 339.8 172.2C350.7 183.1 350.7 200.9 339.8 211.8L211.8 339.8zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                    </svg>
+                    Flexibilidad que te motiva. CERO COMISIÓN POR PAGO ANTICIPADO.
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="checkmark-icon">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M211.8 339.8C200.9 350.7 183.1 350.7 172.2 339.8L108.2 275.8C97.27 264.9 97.27 247.1 108.2 236.2C119.1 225.3 136.9 225.3 147.8 236.2L192 280.4L300.2 172.2C311.1 161.3 328.9 161.3 339.8 172.2C350.7 183.1 350.7 200.9 339.8 211.8L211.8 339.8zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                    </svg>
+                    Transparencia que te da paz. COMISIÓN POR APERTURA 4%.
+                </li>
+            </ul>
+
+            <img src="https://woko.com.mx/wp-content/uploads/2021/07/Group-228-1.svg" alt="Sign document image" loading="lazy"/>
+        </section>
+
+        <!-- REQUIREMENTS -->
+        <section id="requirements" class="requirements transition">
+            <h2>Requisitos</h2>
+            <ul>
+                <li>
+                    <img src="img/img-req1.png" alt="User identity card icon" class="requirement-icon" loading="lazy">
+                    INE vigente
+                </li>
+                <li>
+                    <img src="img/img-req2.png" alt="Document icon" class="requirement-icon" loading="lazy">
+                    Comprobante de domicilio CFE vigente
+                </li>
+                <li>
+                    <img src="img/img-req3.png" alt="Document with loupe icon" class="requirement-icon" loading="lazy">
+                    Comprobante de ingresos
+                    <p>
+                        Últimos 3 meses de recibos de nómina o estados de cuenta bancarios.
+                    </p>
+                </li>
+                <li>
+                    <img src="img/img-req4.png" alt="Credit card icon" class="requirement-icon" loading="lazy">
+                    Caratula del estado de cuenta con CLABE interbancaria
+                </li>
+            </ul>
+
+            <a href="#header" class="btn primary-btn">APLICA YA</a>
+        </section>
+    </article>
+
+    <!-- JOIN OUR COMMUNITY -->
+    <article class="bg-light-gray">
+        <section class="section community transition" id="community">
+            <h2>
+                Únete a nuesta <br />
+                <span class="purple-color">Comunidad Woko</span>
+            </h2>
+
+            <div class="community-container">
+                <div class="community-card">
+                    <img src="img/img-quote.png" alt="Quotation mark" class="quote-icon" loading="lazy"/>
+                    <p class="gray-color">
+                        Hice la comparación del préstamo Woko con otras instituciones y fue la
+                        mejor opción de todas.
+                    </p>
+                    <h3>Jessica</h3>
+                    <p class="purple-color">37 años, Monterrey, N.L.</p>
+                </div>
+
+                <div class="community-card">
+                    <img src="img/img-quote.png" alt="Quotation mark" class="quote-icon" loading="lazy"/>
+                    <p class="gray-color">
+                        Nos marcaban día y noche de otros bancos para cobrarnos. Woko me ayudó
+                        a consolidar mis deudas, pero sobre todo a recuperar la tranquilidad.
+                    </p>
+                    <h3>Charlie</h3>
+                    <p class="purple-color">27 años, Durango, Dgo.</p>
+                </div>
+
+                <div class="community-card">
+                    <img src="img/img-quote.png" alt="Quotation mark" class="quote-icon" loading="lazy"/>
+                    <p class="gray-color">
+                        En Woko me dieron la solución a mi problema de flujo con un crédito
+                        PYME en cuestión de horas.
+                    </p>
+                    <h3>Deneb Galindo</h3>
+                    <p class="purple-color">Dueño de negocio, Monterrey, N.L.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="section about-us transition" id="about-us">
+            <div id="about-us-text">
+                <h2>¿Quiénes <span class="purple-color">Somos?</span></h2>
+
+                <p class="gray-color">
+                    Woko pretende mantener el dinero de sus clientes dónde pertenece, en sus
+                    bolsillos. Ayudándoles con la liquidez que necesitan para cumplir sus
+                    propósitos, mediante préstamos personales con las mejores condiciones
+                    del mercado.
+                </p>
+
+                <h3>Misión</h3>
+                <p class="gray-color">
+                    Mejorar la salud financiera y calidad de vida de nuestros clientes a
+                    través de nuestros servicios.
+                </p>
+
+                <h3>Visión</h3>
+                <p class="gray-color">
+                    Innovar la manera de impulsar financieramente a los clientes a través
+                    del sector financiero no tradicional.
+                </p>
+            </div>
+
+            <img id="about-us-img" src="https://woko.com.mx/wp-content/uploads/2021/07/Group-219.svg"
+                alt="People shaking hands" loading="lazy">
+        </section>
+    </article>
+
+    <!-- WHY US? -->
+    <section class="section why-us transition" id="why-us">
+        <h2>¿Por qué <span class="purple-color">Nosotros</span>?</h2>
+        <p class="gray-color">
+            Somos la opción de crédito personal más conveniente para los mexicanos
+            por lo siguiente:
+        </p>
+
+        <div class="reasons-container">
+            <div class="reason">
+                <div class="reason-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;"
+                        xml:space="preserve" class="reason-icon">
+                        <g>
+                            <g>
+                                <path class="st0"
+                                    d="M322.6,273.5l-72.2-140.6H136L233,320.8C256.7,296.5,287.8,279.7,322.6,273.5L322.6,273.5z" />
+                                <path class="st0"
+                                    d="M467,320.8L564,132.8H449.6l-72.2,140.6C412.2,279.7,443.3,296.5,467,320.8L467,320.8z" />
+                                <path class="st0"
+                                    d="M350,299.6c-74,0-133.8,59.7-133.8,133.8c0,74,59.7,133.8,133.8,133.8s133.8-59.7,133.8-133.8    C483.8,359.3,424,299.6,350,299.6z M396,504.3L350,480l-46,24.3l8.7-51.6L275.3,416l51.6-7.5l23-46.7l23,46.7l51.6,7.5l-37.3,36.7    L396,504.3z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h3>Otorgamos las mejores condiciones del mercado.</h3>
+            </div>
+
+            <div class="reason">
+                <div class="reason-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;"
+                        xml:space="preserve" class="reason-icon">
+                        <style type="text/css">
+                            .st1 {
+                                font-family: 'Poppins', sans-serif;
+                            }
+
+                            .st2 {
+                                font-size: 96.6098px;
+                            }
+                        </style>
+                        <path class="st0"
+                            d="M502.3,493.1l22.4,22.4h-54.9v-54.9l22.4,22.4c33.6-35.8,52.6-83.4,52.6-133.3c0-107.5-87.4-195.4-195.4-195.4  c-108.1,0-194.9,87.9-194.9,195.5S241.9,545.2,350,545.2c3.9,0,7.3,3.4,7.3,7.3c0,3.9-3.4,7.3-7.3,7.3  c-115.4-0.6-209.4-94.6-209.4-210s94-209.5,209.4-209.5s209.4,94.1,209.4,209.4C559.4,403.5,538.7,454.4,502.3,493.1L502.3,493.1z" />
+                        <g>
+                            <text transform="matrix(1 0 0 1 364.7598 586.3056)" class="st0 st1 st2">24</text>
+                        </g>
+                        <path class="st0"
+                            d="M290.3,287.6c-3,2.6-3.4,7-1,9.8l55.3,62.6c2.4,2.8,6.9,2.9,9.8,0.2l101.1-92.4c3-2.6,3.4-7,1-9.8  c-2.4-2.8-6.9-2.9-9.8-0.2L351,345.4l-50.9-57.6C297.7,285,293.3,284.9,290.3,287.6L290.3,287.6z" />
+                    </svg>
+                </div>
+                <h3>Respuesta a tu solicitud en menos de 24 horas.</h3>
+            </div>
+
+            <div class="reason">
+                <div class="reason-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;"
+                        xml:space="preserve" class="reason-icon">
+                        <g>
+                            <g>
+                                <path class="st0"
+                                    d="M596.2,493c17.6,0,17.6,20.5,0,20.5H104c-7.4,0-13.4-4.6-13.4-10.3V196.6c0-13.5,26.7-13.5,26.7,0V493    L596.2,493L596.2,493z" />
+                                <path class="st0"
+                                    d="M552.7,232.1c0-17.6-26.7-17.6-26.7,0v218.3c0,17.6,26.7,17.6,26.7,0V232.1z" />
+                                <path class="st0"
+                                    d="M201,332.7c0-17.6-26.7-17.6-26.7,0v117.7c0,17.6,26.7,17.6,26.7,0V332.7z" />
+                                <path class="st0"
+                                    d="M318.2,253c0-17.6-26.7-17.6-26.7,0v197.5c0,17.6,26.7,17.6,26.7,0V253z" />
+                                <path class="st0"
+                                    d="M435.5,310.6c0-17.6-26.7-17.6-26.7,0v139.8c0,17.6,26.7,17.6,26.7,0V310.6z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h3>Transparente y segura.</h3>
+            </div>
+
+            <div class="reason">
+                <div class="reason-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;"
+                        xml:space="preserve" class="reason-icon">
+                        <path class="st0"
+                            d="M524.8,306l-17.5,17.6l16.8,16.8c11.2,11.2,10.8,29.9-0.9,41.6l-17.5,17.6l16.8,16.8  c11.2,11.2,10.8,29.9-0.9,41.6L381.4,599.1c-11.7,11.8-30.4,12.2-41.6,1.1L174.3,435.6c-11.2-11.2-10.8-29.9,0.9-41.6l17.5-17.6  l-16.8-16.8c-11.2-11.2-10.8-29.9,0.9-41.6l17.5-17.6l-16.8-16.8c-11.2-11.2-10.8-29.9,0.9-41.6l140.4-141.1  c11.7-11.8,30.4-12.2,41.6-1.1l165.4,164.6C536.9,275.6,536.5,294.3,524.8,306L524.8,306z M341.3,524.2l-138-137.3l-17.5,17.6  c-5.5,5.6-5.7,14.6-0.4,19.9l165.4,164.6c5.3,5.3,14.4,5.1,19.9-0.5l140.4-141.1c5.5-5.6,5.7-14.6,0.4-19.9l-16.8-16.8L382.9,523.1  C371.2,534.9,352.5,535.4,341.3,524.2L341.3,524.2z M342.9,448.2l-138-137.3l-17.5,17.6c-5.5,5.6-5.7,14.6-0.4,19.9L352.4,513  c5.3,5.3,14.4,5.1,19.9-0.5l140.4-141.1c5.5-5.6,5.7-14.6,0.4-19.9l-16.8-16.8L384.5,447.1C372.8,458.9,354.1,459.3,342.9,448.2  L342.9,448.2z M349.2,110.9c-5.3-5.3-14.4-5.1-19.9,0.5L188.9,252.5c-5.5,5.6-5.7,14.6-0.4,19.9L353.9,437  c5.3,5.3,14.4,5.1,19.9-0.5l140.4-141.1c5.5-5.6,5.7-14.6,0.4-19.9L349.2,110.9z" />
+                    </svg>
+                </div>
+                <h3>Aplicación rápida y sencilla.</h3>
+            </div>
+
+            <div class="reason">
+                <div class="reason-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;"
+                        xml:space="preserve" class="reason-icon">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #182456;
+                            }
+                        </style>
+                        <path class="st0"
+                            d="M498.5,343.2c-0.1,48.1-23.9,94.1-63.4,121.7c-40.4,28.2-92.9,34.2-138.9,16.6c-44.3-17-78.2-56-89.9-101.8  c-12.1-47.2,0.6-98.5,32.8-134.9c32.5-36.7,81.4-54.6,130-48.8c47.3,5.7,89.6,35.8,112,77.6C492.6,294.8,498.4,319,498.5,343.2  c0,7.4,11.5,7.4,11.5,0c-0.1-25.3-6.1-50.3-17.6-72.9c-11.1-21.8-27.4-40.6-46.9-55.3c-40.3-30.4-94.6-39.3-142.7-24.5  c-47.4,14.6-85.6,51.5-102.8,97.8c-17.6,47.3-10.7,102.1,17.3,143.9c27.9,41.6,74.4,67.8,124.4,70.6c49.9,2.8,99.4-19,131.3-57.4  c23.8-28.6,36.9-65,37-102.2C510,335.8,498.5,335.8,498.5,343.2L498.5,343.2z" />
+                        <path class="st0"
+                            d="M160.6,318.5c0.1-48.5,18.8-95.5,52.2-130.6C246,153,292,131.9,340,129.3c48.6-2.5,96.9,14,133.7,45.7  c36.2,31.3,59.8,76,64.7,123.6c0.7,6.6,1,13.2,1,19.8c0,7.4,11.5,7.4,11.5,0c-0.1-50.1-19-98.6-52.7-135.6  c-33.4-36.7-79.9-59.5-129.2-64.4c-49.7-4.9-100.6,9.6-140.3,39.8c-39.1,29.8-66.6,73.4-76,121.8c-2.4,12.6-3.7,25.5-3.7,38.4  C149.1,325.9,160.5,325.9,160.6,318.5L160.6,318.5z" />
+                        <path class="st0"
+                            d="M148.9,387.9c-0.1,2.8-2.3,3-4.9,3h-11.6h-10.8c-2.3,0-4.1-0.6-4.1-3V354v-48.1v-5.7c0-1.5,0-2.8,1.1-3.5  c1.5-1.1,4.6-0.7,6.8-0.7h12.8h7.7c2,0,3,1.5,3,3.5v13.3v51V387.9c0,7.4,11.5,7.4,11.5,0v-81.1c0-4,0.5-8.5-0.7-12.3  c-1.9-6.1-7.8-10-14.1-10h-9.5h-12.4c-3.9,0-7.5,0.1-11,2.2c-6.3,3.8-6.8,10.4-6.8,16.9v83.8c0,7,4.5,13.2,11.4,14.6  c4.1,0.9,8.7,0.3,12.8,0.3H145c8.4,0,15-5.9,15.4-14.5C160.7,380.5,149.2,380.5,148.9,387.9L148.9,387.9z" />
+                        <path class="st0"
+                            d="M582.5,387.9c-0.1,2.8-2.3,3-4.9,3H566h-10.8c-2.3,0-4.1-0.6-4.1-3V354v-48.1v-5.7c0-1.5,0-2.8,1.1-3.5  c1.5-1.1,4.6-0.7,6.8-0.7h12.8h7.7c2,0,3,1.5,3,3.5v13.3v51C582.5,371.8,582.5,379.9,582.5,387.9c0,7.4,11.5,7.4,11.5,0v-81.1  c0-4,0.5-8.5-0.7-12.3c-1.9-6.1-7.8-10-14.1-10h-9.5h-12.4c-3.9,0-7.5,0.1-11,2.2c-6.3,3.8-6.8,10.4-6.8,16.9v83.8  c0,7,4.5,13.2,11.4,14.6c4.1,0.9,8.7,0.3,12.8,0.3h14.8c8.4,0,15-5.9,15.4-14.5C594.3,380.5,582.8,380.5,582.5,387.9L582.5,387.9z" />
+                        <path class="st0"
+                            d="M358.9,555.1c-0.1,5-2.4,9.8-6.4,12.7c-3.5,2.5-7,3-11.2,3c-7.6,0-17,1.5-22.9-3.4c-8.5-7-7.4-20.1,1.7-25.8  c3.4-2.1,6.8-2.3,10.8-2.3h11.7C351.5,539.3,358.7,546,358.9,555.1c0.1,7.4,11.6,7.4,11.5,0c-0.2-14.4-10.9-25.4-25-27.1  c-3.4-0.4-7.1-0.1-10.5-0.1c-4,0-7.9-0.1-11.9,0.5c-13.5,2.1-23,15.7-21.9,28.9c1.2,14.1,13.1,24.7,27.1,25  c6.6,0.1,13.6,0.5,20.2-0.5c12.8-2,21.8-14.2,22-26.7C370.5,547.7,359,547.7,358.9,555.1L358.9,555.1z" />
+                        <path class="st0"
+                            d="M149.2,378.3c0.1,51.4,21.8,101.1,59.6,136c24.5,22.6,55.1,38.4,87.8,45.2c3.1,0.6,6.2-0.8,7.1-4  c0.8-2.9-0.9-6.4-4-7.1c-48.3-10-90.5-40.3-115.5-82.9c-15.5-26.4-23.4-56.7-23.5-87.2C160.7,370.9,149.2,370.9,149.2,378.3  L149.2,378.3z" />
+                        <path class="st0"
+                            d="M302.8,316.5c-2.1,1.8-2.4,4.9-0.7,6.8l38.6,43.8c1.7,1.9,4.8,2,6.9,0.2l70.6-64.6c2.1-1.8,2.4-4.9,0.7-6.8  c-1.7-1.9-4.8-2-6.9-0.2L345.1,357l-35.6-40.3C308,314.7,304.9,314.6,302.8,316.5L302.8,316.5z" />
+                    </svg>
+                </div>
+                <h3>La mejor atención a cliente.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <section class="footer-sections-container">
+
+            <!--CONTACT-->
+            <div class="footer-section footer-contact-links">
+                <a href="index.html" class="nav-link">
+                    <img src="img/img-logo-woko.png" alt="Logo Woko" loading="lazy">
+                </a>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icon ">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M0 32L144 0l80 144-83.8 67c36.1 68.4 92.3 124.6 160.8 160.8L368 288l144 80L480 512H448C200.6 512 0 311.4 0 64L0 32z" />
+                        </svg>
+                        87 1231 5968 Ext. 101
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                        81 1747 5568
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
+                        </svg>
+                        <a href="mailto: contacto@woko.com.mx">contacto@woko.com.mx</a>
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="footer-icon">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <a href="https://goo.gl/maps/PVcFusunSGEAF69o6" target="_blank">
+                            Av Lázaro Cárdenas 506, Antigua Hacienda San Agustín,64752 Monterrey, N.L.</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--OTHER LINKS-->
+            <div class="footer-section footer-others-links">
+                <h3>Avisos</h3>
+                <ul>
+                    <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+                    <li>
+                        <a href="terminos-condiciones.html">Términos y condiciones</a>
+                    </li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!--SECTIONS-->
+            <div class="footer-section footer-sections-links">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="#header">Solicita tu préstamo</a></li>
+                    <li><a href="#steps">Pasos</a></li>
+                    <li><a href="#community">Testimonios </a></li>
+                    <li><a href="#requirements">Requisitos </a></li>
+                    <li><a href="#about-us">¿Quiénes Somos?</a></li>
+                    <li><a href="#why-us">¿Por qué Nosotros?</a></li>
+                </ul>
+            </div>
+
+            <!--MEDIA-->
+            <div class="footer-section footer-media-links">
+                <h3>Redes</h3>
+                <ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
+                        <a href="https://www.facebook.com/WOKOFINANCIAL">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </a>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
+                        <a href="https://www.instagram.com/woko.com.mx/">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </a>
+                    </svg>
+                </ul>
+
+                <a href="https://www.burodecredito.com.mx/">
+                    <img src="img/img-buro-credito.png" alt="Logo Buró de Crédito" height="100" loading="lazy"/>
+                </a>
+
+
+            </div>
+        </section>
+
+        <p class="footer-copyright">WOKO© Copyright 2022. Powered by WOKO Financial</p>
+    </footer>
+
+    <script src="script/calculator.js" />
+    </script>
+    <script src="script/animations.js" />
+    </script>
+    <script src="script/menu.js" />
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
