@@ -5,17 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Woko's website to display the notice of privacy.">
     <link rel="icon" href="./img/img-icon-w.svg">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/cacdd04d0e.js" crossorigin="anonymous"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/cacdd04d0e.js" crossorigin="anonymous"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css" />
+    
+    <link rel="preload" href="styles/styles.css" as="style">
     <link rel="stylesheet" href="styles/styles.css" />
+
 
     <title>Woko - Préstamos Personales</title>
 </head>
@@ -27,40 +33,40 @@
         <!-- OVERFLOW MENU -->
         <ul class="overflow-menu" id="overflow-menu">
             <li class="nav-link overflow-menu-link">
-                <a href="#footer">Contacto</a>
+                <a href="#footer" aria-label="Contact us links">Contacto</a>
             </li>
             <li class="nav-link overflow-menu-link">
-                <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+                <a href="https://woko.com.mx/wokoblog/" aria-label="Visit our woko blog">Woko Blog</a>
             </li>
         </ul>
 
         <!--HEADER NAV LINKS-->
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav-link">
+            <a href="index.html" class="nav-link" aria-label="Go to home page">
                 <img src="img/img-logo-woko.png" alt="Logo Woko">
             </a>
 
             <ul class="nav-links">
                 <li class="nav-link">
-                    <a href="#footer">Contacto</a>
+                    <a href="#footer" aria-label="Contact us links">Contacto</a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="https://woko.com.mx/wokoblog/">Woko Blog</a>
+                    <a href="https://woko.com.mx/wokoblog/" aria-label="Visit our woko blog">Woko Blog</a>
                 </li>
 
                 <li>
                     <a href="https://solicitud.woko.com.mx/usuario?_ga=2.152788606.617575130.1665504410-1514642199.1665504410&_gl=1*kteo34*_ga*MTUxNDY0MjE5OS4xNjY1NTA0NDEw*_ga_L9YZYS445T*MTY2NTY4MTA0Mi43LjEuMTY2NTY4MjgzMS4wLjAuMA.."
-                        class="btn secondary-btn">ACCESO CLIENTES</a>
+                        class="btn secondary-btn" aria-label="Access our client page">ACCESO CLIENTES</a>
                 </li>
 
                 <li>
-                    <a href="https://solicitud.woko.com.mx/usuario/nuevo" class="btn primary-btn">APLICA YA</a>
+                    <a href="https://solicitud.woko.com.mx/usuario/nuevo" class="btn primary-btn" aria-label="Apply for a loan request">APLICA YA</a>
                 </li>
 
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
-                        <a href="https://www.facebook.com/WOKOFINANCIAL">
+                        <a href="https://www.facebook.com/WOKOFINANCIAL" aria-label="Visit our facebook page">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -70,7 +76,7 @@
 
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
-                        <a href="https://www.instagram.com/woko.com.mx/">
+                        <a href="https://www.instagram.com/woko.com.mx/" aria-label="Visit our instagram page">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -79,7 +85,7 @@
                 </li>
             </ul>
 
-            <button class="menu-hamburger" id="menu-hamburger-btns">
+            <button class="menu-hamburger" id="menu-hamburger-btns" aria-label="Overflow menu buttons">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon" id="menu-icon">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path
@@ -115,8 +121,8 @@
                 puede acceder al contenido de la Ley a través de los portales que el Gobierno Federal, por conducto de
                 la Secretaría de Gobernación, y la Cámara de Diputados del H. Congreso de la Unión tienen en Internet y
                 cuyas direcciones son: <a href="http://www.ordenjuridico.gob.mx/"
-                    target="_blank">http://www.ordenjuridico.gob.mx/</a> y <a href="http://www.diputados.gob.mx"
-                    target="_blank">http://www.diputados.gob.mx</a> .
+                    target="_blank"  aria-label="Orden juridico website">http://www.ordenjuridico.gob.mx/</a> y <a href="http://www.diputados.gob.mx"
+                    target="_blank"  aria-label="Diputados gob website">http://www.diputados.gob.mx</a> .
                 <br><br>
                 En virtud de lo antes expuesto, le informamos que en cumplimiento a nuestro Programa de Privacidad y a
                 la Ley, los datos personales que obtengamos en virtud de las operaciones que usted solicite o celebre
@@ -222,7 +228,7 @@
                 <br><br>
                 La respuesta a las solicitudes que cumplan con los requisitos antes mencionados podrá ser notificada al
                 promovente vía correo electrónico (cuando se proporcione la dirección de correo electrónico) desde la
-                dirección <a href="mailto: arco@woko.com.mx">arco@woko.com.mx</a> por medio de mensajería o por fax,
+                dirección <a href="mailto: arco@woko.com.mx"  aria-label="Arco email">arco@woko.com.mx</a> por medio de mensajería o por fax,
                 aunado a estar disponible en el domicilio de WOKO previa acreditación de identidad por cualquiera de los
                 medios señalados anteriormente. Por cuestiones de seguridad, no se atenderán solicitudes de ejercicio de
                 derechos ARCO que sean enviadas a la dirección electrónica antes mencionada, toda vez que a través de
@@ -230,7 +236,7 @@
                 <br><br>
                 Así también, le informamos que usted tiene derecho a iniciar un Procedimiento de Protección de Derechos
                 ante el Instituto Federal de Acceso a la Información y Protección de Datos (<a
-                    href="http://www.ifai.org.mx/" target="_blank">www.ifai.gob.mx</a>) dentro de los 15 días hábiles
+                    href="http://www.ifai.org.mx/" target="_blank"  aria-label="IFAI website">www.ifai.gob.mx</a>) dentro de los 15 días hábiles
                 siguientes a la fecha en que reciba la respuesta de WOKO, o a partir de que concluya el plazo de 20 días
                 hábiles contados a partir de la fecha de recepción de su solicitud de ejercicio de derechos y no hubiese
                 recibido respuesta alguna.
@@ -241,7 +247,7 @@
                 Cualquier modificación al presente aviso le será notificada a través de cualquiera de los siguientes
                 medios: un comunicado por escrito enviado a su domicilio o entregado en el domicilio de WOKO; un mensaje
                 contenido en su estado de cuenta; un mensaje enviado a su correo electrónico o a su teléfono móvil; un
-                mensaje dado a conocer a través de <a hre="https://woko.com.mx/" target="_blank">www.woko.com.mx</a> o
+                mensaje dado a conocer a través de <a href="./index.html" target="_blank"  aria-label="Woko home page">www.woko.com.mx</a> o
                 de cualquier medio electrónico que utilice para celebrar operaciones con WOKO; o bien, a través de
                 mensajes publicados en periódicos de amplia circulación.
             </p>
@@ -256,9 +262,9 @@
 
             <h2>Otros datos de contacto de Woko:</h2>
             <p>
-                Dirección de página de Internet: <a href="https://woko.com.mx/" target="_blank">www.woko.com.mx</a>.
+                Dirección de página de Internet: <a href="./index.html" target="_blank" aria-label="Woko home page">www.woko.com.mx</a>.
                 <br><br>
-                Correo electrónico: <a href="mailto: arco@woko.com.mx">arco@woko.com.mx</a> (No se atenderán solicitudes
+                Correo electrónico: <a href="mailto: arco@woko.com.mx" aria-label="Arco email">arco@woko.com.mx</a> (No se atenderán solicitudes
                 de ejercicio de derechos ARCO que sean enviadas a esta dirección electrónica).
             </p>
         </div>
@@ -269,9 +275,10 @@
     <footer id="footer" class="footer">
         <section class="footer-sections-container">
 
+            <!--CONTACT-->
             <div class="footer-section footer-contact-links">
-                <a href="index.html" class="header-link">
-                    <img src="img/img-logo-woko.png" alt="Logo Woko">
+                <a href="index.html" class="nav-link" aria-label="Go to home page">
+                    <img src="img/img-logo-woko.png" alt="Logo Woko" loading="lazy">
                 </a>
                 <ul>
                     <li>
@@ -298,7 +305,7 @@
                             <path
                                 d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
                         </svg>
-                        <a href="mailto: contacto@woko.com.mx">contacto@woko.com.mx</a>
+                        <a href="mailto: contacto@woko.com.mx" aria-label="Our email">contacto@woko.com.mx</a>
                     </li>
 
                     <li>
@@ -307,46 +314,50 @@
                             <path
                                 d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
                         </svg>
-                        <a href="https://goo.gl/maps/PVcFusunSGEAF69o6" target="_blank">
+                        <a href="https://goo.gl/maps/PVcFusunSGEAF69o6" target="_blank" aria-label="Woko's location">
                             Av Lázaro Cárdenas 506, Antigua Hacienda San Agustín,64752 Monterrey, N.L.</a>
                     </li>
                 </ul>
             </div>
 
+            <!--OTHER LINKS-->
             <div class="footer-section footer-others-links">
                 <h3>Avisos</h3>
                 <ul>
-                    <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+                    <li><a href="aviso-privacidad.html" aria-label="Visit Aviso de Privacidad page">Aviso de Privacidad</a></li>
                     <li>
-                        <a href="terminos-condiciones.html">Términos y condiciones</a>
+                        <a href="terminos-condiciones.html" aria-label="Visit Terminos y condiciones page">Términos y condiciones</a>
                     </li>
-                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="faqs.html" aria-label="Visit FAQs page">FAQs</a></li>
                 </ul>
             </div>
 
+            <!--SECTIONS-->
             <div class="footer-section footer-sections-links">
                 <h3>Secciones</h3>
                 <ul>
-                    <li><a href="index.html#header">Solicita tu préstamo</a></li>
-                    <li><a href="index.html#steps">Pasos</a></li>
-                    <li><a href="index.html#community">Testimonios </a></li>
-                    <li><a href="index.html#requirements">Requisitos </a></li>
-                    <li><a href="index.html#about-us">¿Quiénes Somos?</a></li>
+                    <li><a href="index.html#header" aria-label="Apply for a loan">Solicita tu préstamo</a></li>
+                    <li><a href="index.html#steps" aria-label="Steps to request a loan">Pasos</a></li>
+                    <li><a href="index.html#community" aria-label="Our community">Testimonios </a></li>
+                    <li><a href="index.html#requirements" aria-label="Requirements">Requisitos </a></li>
+                    <li><a href="index.html#about-us" aria-label="About us">¿Quiénes Somos?</a></li>
+                    <li><a href="index.html#why-us" aria-label="Why us?">¿Por qué Nosotros?</a></li>
                 </ul>
             </div>
 
+            <!--MEDIA-->
             <div class="footer-section footer-media-links">
                 <h3>Redes</h3>
                 <ul>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon">
-                        <a href="https://www.facebook.com/WOKOFINANCIAL">
+                        <a href="https://www.facebook.com/WOKOFINANCIAL" aria-label="Visit our facebook page">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
                         </a>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav-icon">
-                        <a href="https://www.instagram.com/woko.com.mx/">
+                        <a href="https://www.instagram.com/woko.com.mx/" aria-label="Visit our instagram page">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -354,8 +365,13 @@
                     </svg>
                 </ul>
 
-                <a href="https://www.burodecredito.com.mx/">
-                    <img src="img/img-buro-credito.png" alt="Logo Buró de Crédito" height="100" />
+                
+                <a href="https://www.burodecredito.com.mx/" aria-label="Go to Buro de crédito website">
+                    <picture>
+                        <source srcset="img/img-buro-credito.webp" type="image/webp">
+                        <source srcset="img/img-buro-credito.png" type="image/png"> 
+                        <img src="img/img-buro-credito.png" alt="Logo Buró de Crédito" height="100" loading="lazy"/>
+                    </picture>
                 </a>
 
 

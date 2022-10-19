@@ -10,15 +10,16 @@ const requirements = document.getElementById('requirements')
 
 const animation = 'zoom-transition'
 
-jQuery(window).on('scroll', function () {
-    if (jQuery(window).scrollTop() > 300) {
-        jQuery('#nav').addClass('header-fixed');
-        jQuery('#nav').addClass('header-dark-bg');
-    } else {
-        jQuery('#nav').removeClass('header-fixed');
-        jQuery('#nav').removeClass('header-dark-bg');
-    }
-});
+// TO DO: Check jQuery 
+// jQuery(window).on('scroll', function () {
+//     if (jQuery(window).scrollTop() > 300) {
+//         jQuery('#nav').addClass('header-fixed');
+//         jQuery('#nav').addClass('header-dark-bg');
+//     } else {
+//         jQuery('#nav').removeClass('header-fixed');
+//         jQuery('#nav').removeClass('header-dark-bg');
+//     }
+// });
 
 const observerSteps = new IntersectionObserver(entries => {
     entries.forEach(entry => {
