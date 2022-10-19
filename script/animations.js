@@ -11,7 +11,6 @@ const requirements = document.getElementById('requirements')
 const animation = 'zoom-transition'
 
 jQuery(window).on('scroll', function () {
-    console.log()
     if (jQuery(window).scrollTop() > 300) {
         jQuery('#nav').addClass('header-fixed');
         jQuery('#nav').addClass('header-dark-bg');
@@ -78,7 +77,6 @@ const observerReasons = new IntersectionObserver(entries => {
     })
 })
 
-//observeHeader.observe(headerNav);
 observerSteps.observe(stepsContainer);
 observerLoans.observe(loansContainer);
 observerCommunity.observe(communityContainer);
