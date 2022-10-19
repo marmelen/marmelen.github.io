@@ -1,7 +1,7 @@
 const menu = document.getElementById("overflow-menu");
 const menuItems = document.querySelectorAll(".overflow-menu-link");
-const hamburger= document.getElementById("menu-hamburger-btns");
-const closeIcon= document.getElementById("close-icon");
+const hamburger = document.getElementById("menu-hamburger-btns");
+const closeIcon = document.getElementById("close-icon");
 const menuIcon = document.getElementById("menu-icon");
 const nav = document.getElementById("nav");
 
@@ -16,15 +16,14 @@ function toggleMenu() {
     nav.classList.add("header-fixed");
     menuIcon.style.display = "none";
     closeIcon.style.display = "block";
-    
+
   }
 }
 
 hamburger.addEventListener("click", toggleMenu);
 
-console.log(menuItems);
-menuItems.forEach( 
-    function(menuItem) { 
-      menuItem.addEventListener("click", toggleMenu);
-    }
-  )
+menuItems.forEach(
+  function (menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
