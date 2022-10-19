@@ -148,10 +148,11 @@ p {
     background-position: center;
 }
 
+
 .no-webp .banner-1 {
-    background-image: linear-gradient(rgba(54, 53, 79, 0.8),rgba(31, 31, 55, 0.8)),
-                    url("../img/banner1.png");
-}
+    background-image: linear-gradient(rgba(54, 53, 79, 0.8), rgba(31, 31, 55, 0.8)),
+        url("../img/banner1.png");
+} 
 
 .no-webp .banner-2 {
     background-image: linear-gradient(rgba(54, 53, 79, 0.8),
@@ -160,9 +161,9 @@ p {
 }
 
 .webp .banner-1 {
-    background-image: linear-gradient(rgba(54, 53, 79, 0.8),rgba(31, 31, 55, 0.8)),
-                    url("../img/banner1.webp");
-}
+    background-image: linear-gradient(rgba(54, 53, 79, 0.8), rgba(31, 31, 55, 0.8)),
+        url("../img/banner1.webp");
+} 
 
 .webp .banner-2 {
     background-image: linear-gradient(rgba(54, 53, 79, 0.8),
