@@ -451,6 +451,11 @@ p {
     grid-row: 3;
 }
 
+.footer-media-links ul{
+    display: flex;
+    gap: 10px;
+}
+
 .footer-section {
     margin: 1rem 0;
 }
