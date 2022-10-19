@@ -218,17 +218,13 @@ p {
 }
 
 .calculator-title {
-    margin-top: 0;
+    margin: 0;
     font-size: 1.2rem;
     color: var(--dark-purple);
 }
 
 .calculator-inputs label {
     display: block;
-}
-
-.slider {
-    margin: 0.5rem 0 1rem 0;
 }
 
 .slider input[type="range"] {
@@ -683,7 +679,7 @@ button {
 
     .calculator-section {
         flex-grow: 1;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .calculator-inputs {
@@ -696,12 +692,10 @@ button {
     .calculator-field {
         flex: 1 1 0;
         margin: 1rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
     }
 
-    .input,
-    .slider {
-        margin-top: 1rem;
-    }
 
     .calculator-result {
         border-radius: 0 10px 10px 0;
@@ -839,7 +833,7 @@ button {
 
     /*------------------------- HEADER-HERO ---------------------*/
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .hero p {
@@ -848,7 +842,6 @@ button {
 
     /*------------------------- CALCULADORA ---------------------*/
     .calculator-title {
-        margin: 2rem 2rem;
         font-size: 2.5rem;
     }
 }
@@ -882,18 +875,18 @@ button {
 
     /*------------------------- HEADER-HERO ---------------------*/
     .hero h1 {
-        margin-top: 8rem;
+        margin-top: 6rem;
         margin-bottom: 0;
         font-size: 4vw;
     }
 
     .banner-carousel-container .carousel-item {
-        height: 50rem;
+        height: 40rem;
     }
 
     .hero-text-carousel .carousel-item p {
         font-size: 1.7rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     /*------------------------- CALCULADORA ---------------------*/
