@@ -250,6 +250,7 @@ p {
 .input-selector {
     width: 100%;
     padding: 0.7rem 1rem;
+    background-color: var(--light-blue);
     border: 2px solid var(--aqua);
     border-radius: 10px;
     transition: all 150ms ease;
