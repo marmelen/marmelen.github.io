@@ -304,7 +304,7 @@ p {
     /* max-width: 10rem; */
     display: block;
     margin: auto;
-    max-width: 70%;
+    width: 70%;
     height: auto;
 }
 
