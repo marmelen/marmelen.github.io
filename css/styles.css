@@ -301,11 +301,7 @@ p {
 }
 
 .step-container-img {
-    width: 100%;
-    /* display: block;
-    margin: auto;
-    width: 70%;
-    height: auto;*/
+    width: 80%;
 } 
 
 .step-container:hover {
@@ -748,7 +744,7 @@ button {
     }
 
     .step-container-img {
-        width: 100%;
+        width: 50%;
     }
 
     /*------------------------- PRESTAMO ------------------------*/
