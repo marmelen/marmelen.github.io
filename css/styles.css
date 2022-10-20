@@ -301,8 +301,8 @@ p {
 }
 
 .step-container-img {
-    width: 100%;
-    max-height: 7rem;
+    max-width: 10rem;
+    max-height: 10rem;
 }
 
 .step-container:hover {
@@ -377,7 +377,7 @@ p {
 
 /*------------------------- QUIENES-SOMOS -------------------*/
 .about-us img {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
@@ -786,8 +786,9 @@ button {
     }
 
     .about-us img {
-        width: 40%;
-        margin-left: 2rem;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 
     /*------------------------- POR-QUE-NOSOTROS ----------------*/
