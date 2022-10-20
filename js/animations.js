@@ -1,85 +1,16 @@
-const stepsContainer = document.querySelector('.steps-container')
-const loansContainer = document.getElementById('loans-requirements')
-const communityContainer = document.getElementById('community')
-const aboutUsContainer = document.getElementById('about-us')
-const reasonsContainer = document.getElementById('why-us')
-const headerNav = document.getElementById('nav')
+const header = document.getElementById("nav");
+const sticky = header.offsetTop; // Get the offset position of the navbar
 
-const loans = document.getElementById('loans')
-const requirements = document.getElementById('requirements')
+// When the user scrolls the page, execute setOnTop
+window.onscroll = function () { setOnTop() };
 
-const animation = 'zoom-transition'
-
-// TO DO: Check jQuery 
-// jQuery(window).on('scroll', function () {
-//     if (jQuery(window).scrollTop() > 300) {
-//         jQuery('#nav').addClass('header-fixed');
-//         jQuery('#nav').addClass('header-dark-bg');
-//     } else {
-//         jQuery('#nav').removeClass('header-fixed');
-//         jQuery('#nav').removeClass('header-dark-bg');
-//     }
-// });
-
-const observerSteps = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            stepsContainer.classList.add(animation)
-            return
-        }
-
-        stepsContainer.classList.remove(animation)
-    })
-})
-
-const observerLoans = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            loans.classList.add(animation)
-            requirements.classList.add(animation)
-            return
-        }
-
-        loans.classList.remove(animation)
-        requirements.classList.remove(animation)
-    })
-})
-
-const observerCommunity = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            communityContainer.classList.add(animation)
-            return
-        }
-
-        communityContainer.classList.remove(animation)
-    })
-})
-
-const observerAboutUs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            aboutUsContainer.classList.add(animation)
-            return
-        }
-
-        aboutUsContainer.classList.remove(animation)
-    })
-})
-
-const observerReasons = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            reasonsContainer.classList.add(animation)
-            return
-        }
-
-        reasonsContainer.classList.remove(animation)
-    })
-})
-
-observerSteps.observe(stepsContainer);
-observerLoans.observe(loansContainer);
-observerCommunity.observe(communityContainer);
-observerAboutUs.observe(aboutUsContainer);
-observerReasons.observe(reasonsContainer);
+// Add the header-fixed and dark-bg classes to the header when you reach its scroll position.
+function setOnTop() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("header-fixed");
+        header.classList.add("header-dark-bg");
+    } else {
+        header.classList.remove("header-fixed");
+        header.classList.remove("header-dark-bg");
+    }
+}

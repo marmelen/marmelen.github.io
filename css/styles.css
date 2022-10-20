@@ -95,11 +95,12 @@ p {
 
 /*------------------------- HEADER --------------------------*/
 .header {
+    width: 100%;
     height: auto;
     overflow: hidden;
     color: var(--white);
 }
-
+  
 .header-dark-bg {
     background-color: var(--dark-purple);
 }
@@ -301,7 +302,7 @@ p {
 }
 
 .step-container-img {
-    width: 80%;
+    width: 50%;
 } 
 
 .step-container:hover {
