@@ -301,8 +301,11 @@ p {
 }
 
 .step-container-img {
-    max-width: 10rem;
-    max-height: 10rem;
+    /* max-width: 10rem; */
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    height: auto;
 }
 
 .step-container:hover {
