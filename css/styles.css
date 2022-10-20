@@ -301,12 +301,12 @@ p {
 }
 
 .step-container-img {
-    /* max-width: 10rem; */
-    display: block;
+    width: 100%;
+    /* display: block;
     margin: auto;
     width: 70%;
-    height: auto;
-}
+    height: auto;*/
+} 
 
 .step-container:hover {
     background-color: var(--white);
